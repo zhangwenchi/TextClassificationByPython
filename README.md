@@ -4,7 +4,7 @@ TextClassificationByPython
 
 1.Crawling
 ------------------------------------------------------------------
-    Using Python to crawl different kinds of news from Netease.
+    Using Python to crawl different kinds of news from Sohu.
     (1)Crawl the Proxy
     (2)Check the Proxy available or not
     (3)Crawl the news links
