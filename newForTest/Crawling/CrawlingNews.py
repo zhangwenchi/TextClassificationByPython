@@ -30,10 +30,10 @@ for iq in range(10):
 
 def getNews(url, typex):
     # print(url + " " + typex)
-    file1 = open('CrawlingData/NewsLink.txt', 'a')
+    if not os.path.exists('CrawlingData/NewsLink/%s' % typex):
+        os.makedirs('CrawlingData/NewsLink/%s' % typex)
+    file1 = open('CrawlingData/NewsLink/%s/link.txt' % typex, 'a')
     file1.write('https://m.sohu.com' + url + '\n')
-    file2 = open('CrawlingData/NewsType.txt', 'a')
-    file2.write(typex + '\n')
 
 
 def crawling(url, proxy, typex):
@@ -76,12 +76,6 @@ def crawling(url, proxy, typex):
                 print('出现验证码或IP被封杀')
         except Exception as e:
             print(e)
-
-
-
-
-
-
 
 allthread = []
 for i in range(9):
