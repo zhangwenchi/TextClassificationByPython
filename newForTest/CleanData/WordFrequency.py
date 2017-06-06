@@ -1,4 +1,5 @@
 import os
+import json
 
 dataDir = '../Crawling/CrawlingData/NewsContent'
 dirList = os.listdir(dataDir)
@@ -25,6 +26,12 @@ for i in range(len(data)):
 
 # sorted dict (type is list), and the element from the list is like ('str', frequency)
 wordf = sorted(dict.items(), key=lambda d:d[1], reverse=True)
+
+jsObj = json.dumps(wordf)
+fileObject = open('dictFile.json', 'w', encoding='utf-8')
+fileObject.write(jsObj)
+fileObject.close()
+
 words = []
 for i in range(len(wordf)):
     words.append(wordf[i][0])
