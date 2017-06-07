@@ -1,0 +1,5 @@
+I finished the selection part??
+I do not think so ,
+IG is not a good method for classification,
+I use TFIDF from sklearn for efficiency but I can not choose the keywords
+chi is so easy and the output is uncommon so I choose to use it before classification
