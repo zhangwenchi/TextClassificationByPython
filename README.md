@@ -1,4 +1,3 @@
-F
 
 TextClassificationByPython
 ==============================================================
@@ -29,3 +28,13 @@ TextClassificationByPython
 -------------------------------------------------------------------------
     I think of this part, I think it's not necessary for I do the TF-IDF
     And I can divide data just before classification
+    
+5.Classification
+---------------------------------------------------------------------------
+    1.Naive Bayes    -> error rate(DIY): 0.1303894297635605
+    2.Random Forest  -> error rate(sklearn): 0.13446088794926003
+    3.SVM            -> error rate(sklearn linear, OVO): 0.142495  -> error rate(DIY rbf, OVR): 0.742072
+    4..KNN           -> error rate(sklearn): 0.725159
+    5.Neural Network
+        (1)simple one layer BP  -> error rate(DIY): 0.526427
+        (2)MLP                  -> error rate(sklearn, hide_layer(10,30)): 0.128541 (TOP Now)
