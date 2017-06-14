@@ -39,3 +39,13 @@ TextClassificationByPython
     5.Neural Network
         (1)simple one layer BP  -> error rate(DIY): 0.526427
         (2)MLP                  -> error rate(sklearn, hide_layer(10,30)): 0.128541 (TOP Now)
+        (2)RNN                  -> error rate(DIY): 0.365031
+    6.Adaboost                  -> error rate(Not do it well) : 0.357717
+    
+6.Write for me
+--------------------------------------------------------------------------
+    Finally, I finished my text-classification, it's not perfect, even less than 'cool',
+    for I almost 'skip' the RNN and Adaboost part.
+    But here is one thing that I am proud of -- I did not use thano or tensorflow or something else.
+    I will use then in my next project :)
+    Happy ! finished.
